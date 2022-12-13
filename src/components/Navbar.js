@@ -16,7 +16,7 @@ const Navbar = () => {
             <Grid item xs={4}>
               <Logo />
             </Grid>
-            <Grid item xs={8} sx={{height: '100px', display: 'flex', justifyContent: 'right', alignItems: 'center'}}>
+            <Grid item xs={8} sx={{height: '100px', display: 'flex', justifyContent: 'right', alignItems: 'center'}} className="menu_bar">
                         <Link href="#" underline="none" className="menu_item">
                             ПОЧЕТНА
                         </Link>
