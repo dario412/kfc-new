@@ -1,6 +1,7 @@
-import './App.css';
+import "./App.css";
 import React from "react";
 import Navbar from './components/Navbar'
+import Footer from "./components/Footer/Footer";
 import Pocetna from './components/pages/pocetna/Pocetna';
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from './theme';
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Pocetna />} />
           </Routes>
         </Router>
+        <Footer />
         </ThemeProvider>
     );
 }
