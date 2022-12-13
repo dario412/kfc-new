@@ -2,4 +2,20 @@
     color: white !important;
     font-family: Social Gothic;
     font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.menu_bar a:hover {
+    background-color: white;
+    color: #FF0024 !important;
+}
+
+.menu_bar a:active {
+    background-color: white;
+    color: #FF0024 !important;
 }
