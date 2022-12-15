@@ -17,18 +17,19 @@ export const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Social Gothic",
+    // fontFamily: "Social Gothic",
+    fontFamily: 'Open Sans',
     h1: {
-      fontSize: "4.4rem",
-      fontWeight: 700,
+      fontSize: "40px",
+      fontWeight: 800,
     },
     h2: {
-      fontSize: "2.4rem",
-      fontWeight: 700,
+      fontSize: "34px",
+      fontWeight: 800,
     },
     h3: {
-      fontSize: "1.8rem",
-      fontWeight: 500,
+      fontSize: "20px",
+      fontWeight: 700,
     },
     body1: {
       fontSize: "1.4rem",
@@ -53,10 +54,13 @@ export const theme = createTheme({
         {
           props: { variant: "contained" },
           style: {
-            fontSize: "1.8rem",
-            fontWeight: 500,
+            fontSize: "14px",
+            fontWeight: 800,
             color: "white",
-            padding: "0.7rem 4.7rem",
+            p: '13px 21px',
+            backgroundColor: '#FF0024',
+            borderRadius: 100, 
+            boxShadow: 'none'
           },
         },
         {
