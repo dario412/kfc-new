@@ -73,5 +73,37 @@ export const theme = createTheme({
         },
       ],
     },
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          "& label": {
+            color: "white",
+          },
+          "& label.Mui-focused": {
+            color: "white",
+          },
+          "& .MuiInput-underline:after": {
+            borderBottomColor: "#3E68A8",
+          },
+          "& .MuiOutlinedInput-root": {
+            "& fieldset": {
+              borderColor: "white",
+              borderRadius: "20px",
+              borderWidth: "3px",
+            },
+            "&:hover fieldset": {
+              borderColor: "white",
+              borderRadius: "20px",
+              borderWidth: "3px",
+            },
+            "&.Mui-focused fieldset": {
+              borderColor: "white",
+              borderRadius: "20px",
+              borderWidth: "3px",
+            },
+          },
+        },
+      },
+    },
   },
 });
