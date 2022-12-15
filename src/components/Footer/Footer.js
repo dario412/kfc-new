@@ -23,7 +23,7 @@ const Footer = () => {
         p: 0,
       }}
     >
-      <Grid container spacing={2} sx={{ width: "1300px" }}>
+      <Grid container spacing={2} sx={{ width: "1300px", }}>
         <Grid
           container
           spacing={3}
@@ -67,20 +67,23 @@ const Footer = () => {
             }}
             gap={1}
           >
-            <Typography variant="h4" sx={{ color: "black" }}>
-              За Компанијата{" "}
+            <Typography variant="h3" fontWeight={900} sx={{ color: "black", pb: '10px' }}>
+              НАВИГАЦИЈА
             </Typography>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+              ПОЧЕТНА
             </Link>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+              МЕНИ
             </Link>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM{" "}
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+              КАРИЕРА
             </Link>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+              НОВОСТИ
+            </Link>
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+              КОНТАКТ
             </Link>
           </Grid>
           <Grid
@@ -95,20 +98,23 @@ const Footer = () => {
             }}
             gap={1}
           >
-            <Typography variant="h4" sx={{ color: "black" }}>
-              За Компанијата{" "}
+            <Typography variant="h3" fontWeight={900} sx={{ color: "black", pb: '10px' }}>
+              ЗА НАС
             </Typography>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+              НОВОСТИ
             </Link>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+              КАРИЕРА
             </Link>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM{" "}
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+              ЛОКАЦИИ
             </Link>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+              П. НА ПРИВАТНОСТ
+            </Link>
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+              У. ЗА КОРИСТЕЊЕ
             </Link>
           </Grid>
           <Grid
@@ -134,20 +140,23 @@ const Footer = () => {
             }}
             gap={1}
           >
-            <Typography variant="h4" sx={{ color: "black" }}>
-              За Компанијата{" "}
+            <Typography variant="h3" fontWeight={900} sx={{ color: "black", pb: '10px' }}>
+              ГЛАВНО МЕНИ
             </Typography>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+            БУРГЕРИ И ВРАПОВИ
             </Link>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+              КОФИ
             </Link>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM{" "}
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+              ЗАКУСКИ
             </Link>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+              САЛАТИ
+            </Link>
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+            ОБРОЦИ ЗА ДЕЦА
             </Link>
           </Grid>
           <Grid
@@ -163,20 +172,23 @@ const Footer = () => {
             gap={1}
           >
             {" "}
-            <Typography variant="h4" sx={{ color: "black" }}>
-              За Компанијата{" "}
+            <Typography variant="h3" fontWeight={900} sx={{ color: "black", pb: '10px' }}>
+              КОНТАКТ
             </Typography>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+            KFC SKOPJE CITY MALL
             </Link>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+            KFC EAST GATE MALL
             </Link>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM{" "}
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+            KFC DRIVE THRU OKTA
             </Link>
-            <Link href="#" underline="none" color="black">
-              LOREM IPSUM
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+            KFC POINT RETAIL PARK
+            </Link>
+            <Link href="#" underline="none" color="black" fontWeight={600}>
+            KFC PALMA MALL
             </Link>
           </Grid>
         </Grid>

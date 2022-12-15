@@ -14,7 +14,7 @@ import  Slika4 from '../../../assets/crispy_box.svg';
 import  Slika2 from '../../../assets/couple_box.svg';
 import  Slika3 from '../../../assets/family_box.svg';
 import  BlogSlika from '../../../assets/blog_test.svg';
-import Blog from "./Blog/Blog";
+import Blog from "./Blog/BlogCard";
 
 
 

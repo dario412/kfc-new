@@ -7,6 +7,8 @@ import { ThemeProvider } from '@mui/material/styles';
 import { theme } from './theme';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Menu from "./components/pages/meni/Menu";
+import SingleProduct from "./components/pages/singleProduct/SingleProduct";
+import Blog from "./components/pages/Blog/Blog";
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Pocetna />} />
             <Route path="/meni" element={<Menu />} />
+            <Route path="/single" element={<SingleProduct />} />
+            <Route path="/blog" element={<Blog />} />
           </Routes>
         </Router>
         <Footer />
