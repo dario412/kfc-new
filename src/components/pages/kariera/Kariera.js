@@ -7,13 +7,17 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { ReactComponent as KarieraImg } from "../../../assets/image 73.png";
 import KarieraAccordion from "./accordion";
-
+import { ReactComponent as Gallery } from "../../../assets/gallery.svg";
+import CardMedia from "@mui/material/CardMedia";
+import KarieraSlika from "../../../assets/gallery.jpg";
+import SlikaKariera from "../../../assets/image 73.png";
+import VrabotuvanjeForm from "./VrabotuvanjeForm";
 const Kariera = () => {
   return (
     <Box
       sx={{
         flexGrow: 1,
-        boxShadow: 3,
+        boxShadow: 0,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -32,6 +36,7 @@ const Kariera = () => {
             backgroundColor: "#D10A1F",
             height: "fit-content",
             borderRadius: "20px",
+            "& >.MuiGrid-item": { pt: 0 },
           }}
         >
           <Grid item xs={12} sx={{ textAlign: "center", p: 0, m: 0, pt: 0 }}>
@@ -48,10 +53,10 @@ const Kariera = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid container>
-          <Grid item xs={6} sx={{ mt: "40px" }}>
+        <Grid container sx={{ mt: "60px", mb: "40px" }}>
+          <Grid item xs={6} sx={{ pr: "30px" }}>
             <Typography
-              variant="h3"
+              variant="h2"
               sx={{
                 color: "#D10A1F",
                 textAlign: "left",
@@ -76,20 +81,47 @@ const Kariera = () => {
               Генерален менаџер на ресторан
             </Typography>
           </Grid>
-          <Grid xs={6}></Grid>
+          <Grid xs={6}>
+            <CardMedia
+              image={SlikaKariera}
+              style={{ width: "100%", height: "400px" }}
+            />
+          </Grid>
         </Grid>
       </Box>
-      <Grid xs={12} sx={{ mt: "30px", mb: "30px" }}>
-        <Grid item xs={12} sx={{ backgroundColor: "#D4CEC0" }}>
-          <Typography
-            variant="h2"
-            sx={{ maxWidth: "1300px", pt: "30px", pb: "30px" }}
-          >
+      <Grid
+        container
+        xs={12}
+        sx={{
+          mt: "30px",
+          backgroundColor: "#D4CEC0",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Grid item sx={{ maxWidth: "1300px" }}>
+          <Typography variant="h2" sx={{ pt: "30px", pb: "30px" }}>
             КРАТКИ ИНФОРМАЦИИ ЗА НАШИТЕ РАБОТНИ ПОЗИЦИИ ВО РЕСТОРАНОТ МОЖЕТЕ ДА
             НАЈДЕТЕ ТУКА:
           </Typography>
         </Grid>
+      </Grid>
+      <Grid container xs={12}>
+        {/* <Grid item xs={12} sx={{ backgroundColor: "#D4CEC0", width: "1300px" }}>
+          <Typography variant="h2" sx={{ pt: "30px", pb: "30px" }}>
+            КРАТКИ ИНФОРМАЦИИ ЗА НАШИТЕ РАБОТНИ ПОЗИЦИИ ВО РЕСТОРАНОТ МОЖЕТЕ ДА
+            НАЈДЕТЕ ТУКА:
+          </Typography>
+        </Grid> */}
         <KarieraAccordion />
+        <CardMedia
+          image={KarieraSlika}
+          style={{ width: "100vw", height: "290px" }}
+        />
+      </Grid>
+      <Grid item xs={12}>
+        <VrabotuvanjeForm />
       </Grid>
     </Box>
   );

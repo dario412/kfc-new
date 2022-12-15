@@ -23,7 +23,7 @@ const Footer = () => {
         p: 0,
       }}
     >
-      <Grid container spacing={2} sx={{ width: "1300px", }}>
+      <Grid container spacing={2} sx={{ width: "1300px" }}>
         <Grid
           container
           spacing={3}
@@ -67,7 +67,11 @@ const Footer = () => {
             }}
             gap={1}
           >
-            <Typography variant="h3" fontWeight={900} sx={{ color: "black", pb: '10px' }}>
+            <Typography
+              variant="h3"
+              fontWeight={900}
+              sx={{ color: "black", pb: "10px" }}
+            >
               НАВИГАЦИЈА
             </Typography>
             <Link href="#" underline="none" color="black" fontWeight={600}>
@@ -98,7 +102,11 @@ const Footer = () => {
             }}
             gap={1}
           >
-            <Typography variant="h3" fontWeight={900} sx={{ color: "black", pb: '10px' }}>
+            <Typography
+              variant="h3"
+              fontWeight={900}
+              sx={{ color: "black", pb: "10px" }}
+            >
               ЗА НАС
             </Typography>
             <Link href="#" underline="none" color="black" fontWeight={600}>
@@ -140,11 +148,15 @@ const Footer = () => {
             }}
             gap={1}
           >
-            <Typography variant="h3" fontWeight={900} sx={{ color: "black", pb: '10px' }}>
+            <Typography
+              variant="h3"
+              fontWeight={900}
+              sx={{ color: "black", pb: "10px" }}
+            >
               ГЛАВНО МЕНИ
             </Typography>
             <Link href="#" underline="none" color="black" fontWeight={600}>
-            БУРГЕРИ И ВРАПОВИ
+              БУРГЕРИ И ВРАПОВИ
             </Link>
             <Link href="#" underline="none" color="black" fontWeight={600}>
               КОФИ
@@ -156,7 +168,7 @@ const Footer = () => {
               САЛАТИ
             </Link>
             <Link href="#" underline="none" color="black" fontWeight={600}>
-            ОБРОЦИ ЗА ДЕЦА
+              ОБРОЦИ ЗА ДЕЦА
             </Link>
           </Grid>
           <Grid
@@ -172,23 +184,27 @@ const Footer = () => {
             gap={1}
           >
             {" "}
-            <Typography variant="h3" fontWeight={900} sx={{ color: "black", pb: '10px' }}>
+            <Typography
+              variant="h3"
+              fontWeight={900}
+              sx={{ color: "black", pb: "10px" }}
+            >
               КОНТАКТ
             </Typography>
             <Link href="#" underline="none" color="black" fontWeight={600}>
-            KFC SKOPJE CITY MALL
+              KFC SKOPJE CITY MALL
             </Link>
             <Link href="#" underline="none" color="black" fontWeight={600}>
-            KFC EAST GATE MALL
+              KFC EAST GATE MALL
             </Link>
             <Link href="#" underline="none" color="black" fontWeight={600}>
-            KFC DRIVE THRU OKTA
+              KFC DRIVE THRU OKTA
             </Link>
             <Link href="#" underline="none" color="black" fontWeight={600}>
-            KFC POINT RETAIL PARK
+              KFC POINT RETAIL PARK
             </Link>
             <Link href="#" underline="none" color="black" fontWeight={600}>
-            KFC PALMA MALL
+              KFC PALMA MALL
             </Link>
           </Grid>
         </Grid>
