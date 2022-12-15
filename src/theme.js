@@ -18,7 +18,7 @@ export const theme = createTheme({
   },
   typography: {
     // fontFamily: "Social Gothic",
-    fontFamily: 'Open Sans',
+    fontFamily: "Open Sans",
     h1: {
       fontSize: "40px",
       fontWeight: 800,
@@ -32,7 +32,7 @@ export const theme = createTheme({
       fontWeight: 700,
     },
     body1: {
-      fontSize: "1.4rem",
+      fontSize: "18px",
       fontWeight: 500,
     },
     body2: {
@@ -57,10 +57,10 @@ export const theme = createTheme({
             fontSize: "14px",
             fontWeight: 800,
             color: "white",
-            p: '13px 21px',
-            backgroundColor: '#FF0024',
-            borderRadius: 100, 
-            boxShadow: 'none'
+            p: "13px 21px",
+            backgroundColor: "#FF0024",
+            borderRadius: 100,
+            boxShadow: "none",
           },
         },
         {
