@@ -1,17 +1,15 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import { ReactComponent as ThreeLinesWhite } from "../../../../assets/3lines-white.svg";
+import { ReactComponent as ThreeLinesWhite } from "../../../assets/3lines-white.svg";
 import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
-const Contact = () => {
+const VrabotuvanjeForm = () => {
   return (
     <Box
       sx={{
-        flexGrow: 1,
-        boxShadow: 0,
         display: "flex",
         justifyContent: "center",
         pt: "80px",
@@ -76,14 +74,56 @@ const Contact = () => {
             inputProps={{ style: { color: "white" } }}
           />
         </Grid>
-        <Grid item xs={12} sx={{ textAlign: "center", pt: 0 }}>
+        <Grid item xs={6} sx={{ textAlign: "end", pt: 0 }}>
           <TextField
-            label="ПОРАКА"
-            type="text"
+            label="ДАТА НА РАЃАЊЕ"
             variant="outlined"
-            sx={{ borderColor: "white", width: "580px", maxWidth: "800px" }}
+            type="numbers"
+            sx={{ borderColor: "white" }}
             inputProps={{ style: { color: "white" } }}
           />
+        </Grid>
+        <Grid item xs={6} sx={{ textAlign: "start", pt: 0 }}>
+          <TextField
+            label="АДРЕСА НА ЖИВЕЕЊЕ"
+            variant="outlined"
+            type="numbers"
+            sx={{ borderColor: "white" }}
+            inputProps={{ style: { color: "white" } }}
+          />
+        </Grid>
+        <Grid
+          container
+          sx={{ alignItems: "center", justifyContent: "center" }}
+          gap={2}
+        >
+          <Grid item sx={{ textAlign: "end", pt: 0 }}>
+            <TextField
+              label="РЕСТОРАН"
+              variant="outlined"
+              type="numbers"
+              sx={{ borderColor: "white", maxWidth: "258px" }}
+              inputProps={{ style: { color: "white" } }}
+            />
+          </Grid>{" "}
+          <Grid item sx={{ textAlign: "center", pt: 0 }}>
+            <TextField
+              label="РАБОТНО ВРЕМЕ"
+              variant="outlined"
+              type="numbers"
+              sx={{ borderColor: "white", maxWidth: "258px" }}
+              inputProps={{ style: { color: "white" } }}
+            />
+          </Grid>{" "}
+          <Grid item sx={{ textAlign: "start", pt: 0 }}>
+            <TextField
+              label="ПОЗИЦИЈА"
+              variant="outlined"
+              type="numbers"
+              sx={{ borderColor: "white", maxWidth: "258px" }}
+              inputProps={{ style: { color: "white" } }}
+            />
+          </Grid>
         </Grid>
         <Grid item xs={12} sx={{ textAlign: "center", pt: 0 }}>
           <Button
@@ -91,7 +131,7 @@ const Contact = () => {
             sx={{
               backgroundColor: "white",
               p: "20px 40px",
-              mt: 1,
+              mt: "30px",
               fontSize: "16px",
               boxShadow: "none",
               borderRadius: 100,
@@ -113,4 +153,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default VrabotuvanjeForm;
