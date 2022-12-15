@@ -7,8 +7,11 @@ import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "./theme";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Menu from "./components/pages/meni/Menu";
+import SingleProduct from "./components/pages/singleProduct/SingleProduct";
+import Blog from "./components/pages/Blog/Blog";
 import Contact from "./components/pages/pocetna/Contact/contact";
 import Kariera from "./components/pages/kariera/Kariera";
+
 
 function App() {
   return (
@@ -20,11 +23,13 @@ function App() {
           <Route path="/meni" element={<Menu />} />
           <Route path="/kontakt" element={<Contact />} />
           <Route path="/kariera" element={<Kariera />} />
+          <Route path="/single" element={<SingleProduct />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </Router>
       <Footer />
     </ThemeProvider>
   );
-}
+  }
 
 export default App;
