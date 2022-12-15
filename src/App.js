@@ -1,20 +1,22 @@
 import "./App.css";
 import React from "react";
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
 import Footer from "./components/Footer/Footer";
 import Pocetna from './components/pages/pocetna/Pocetna';
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from './theme';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Menu from "./components/pages/meni/Menu";
 
 
 function App() {
   return(
-      <ThemeProvider theme={theme}>
-      <Navbar />
+      <ThemeProvider theme={theme} >
         <Router>
+        <Navbar />
           <Routes>
             <Route path="/" element={<Pocetna />} />
+            <Route path="/meni" element={<Menu />} />
           </Routes>
         </Router>
         <Footer />

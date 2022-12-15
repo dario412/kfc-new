@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -45,3 +47,5 @@
   src: local("Social Gothic DemiBold"),
     url("./assets/fonts/Social\ Gothic\ DemiBold.otf") format("truetype");
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
