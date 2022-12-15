@@ -1,10 +1,10 @@
 .show {
-    left: 0;
-    transform: translate(20px);
+    transform: translateX(110px);
 }
 
 .side-menu-item {
-    position: absolute;
-    left: -80px !important;
+    margin-left: -150px;
+    position: sticky;
     transition: 0.3s;
+    width: 200px;
 }
