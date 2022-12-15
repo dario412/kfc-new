@@ -11,6 +11,7 @@ import SingleProduct from "./components/pages/singleProduct/SingleProduct";
 import Blog from "./components/pages/Blog/Blog";
 import Contact from "./components/pages/pocetna/Contact/contact";
 import Kariera from "./components/pages/kariera/Kariera";
+import Map from "./components/pages/map/Map";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/kariera" element={<Kariera />} />
           <Route path="/single" element={<SingleProduct />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/map" element={<Map/>} />
         </Routes>
       </Router>
       <Footer />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState, useRef, useCallback } from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Promotion from '../../../assets/promocii.svg';
@@ -37,6 +37,7 @@ import SideMenu from './SideMenu/SideMenu';
 import Akcija1 from '../../../assets/akcija1.svg';
 import Akcija2 from '../../../assets/akcija2.svg';
 import Akcija3 from '../../../assets/akcija3.svg';
+import { useInView } from 'react-intersection-observer';
 
 const burgeri = [
     {
@@ -144,33 +145,60 @@ const menu = [
     {
         image: MenuBurger,
         isActive: true,
+        name: 'burgeri'
     },
     {
         image: MenuKofi,
         isActive: false,
+        name: 'kofi'
     },
     {
         image: MenuZakuski,
         isActive: false,
+        name: 'zakuski'
     },
     {
         image: MenuSalati,
         isActive: true,
+        name: 'salati'
     },
     {
         image: MenuDeca,
         isActive: false,
+        name: 'deca'
     },
     {
         image: MenuPrilozi,
         isActive: false,
+        name: 'prilozi'
     },
 ]
 
 const Menu = () => {
+    const [currentId, setCurrentId] = useState(null)
+    
+    const { ref: item1, inView: item1IsVisible } = useInView();
+    const { ref: item2, inView: item2IsVisible } = useInView();
+    const { ref: item3, inView: item3IsVisible } = useInView();
+    const { ref: item4, inView: item4IsVisible } = useInView();
+    const { ref: item5, inView: item5IsVisible } = useInView();
+    const { ref: item6, inView: item6IsVisible } = useInView();
+
+    useEffect(() => {
+        calculateCurrentId()
+        console.log(currentId);
+    }, [item1IsVisible,item2IsVisible,item3IsVisible,item4IsVisible,item5IsVisible,item6IsVisible])
+
+    const calculateCurrentId = () => {
+        if(item1IsVisible) setCurrentId('burgeri');
+        if(item2IsVisible) setCurrentId('kofi');
+        if(item3IsVisible) setCurrentId('zakuski');
+        if(item4IsVisible) setCurrentId('salati');
+        if(item5IsVisible) setCurrentId('deca');
+        if(item6IsVisible) setCurrentId('prilozi');
+    }
+
   return (<div>
-
-
     <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', pt: '40px', pb: '80px', flexDirection: 'column' }}>
             <Grid container spacing={1} sx={{ width: '1300px', backgroundColor: '#D10A1F', borderRadius: '30px', pt: 0, pb: '50px', my: '50px'}} >
                 <Grid item xs={12} sx={{display: 'flex', alignItems: 'top', justifyContent: 'center', pb: '60px', m: 0}}>
@@ -188,11 +216,12 @@ const Menu = () => {
                 </Grid>
             </Grid>
 
-            <SideMenu sideMenuItems={menu} />
+            <SideMenu currentId={currentId} sideMenuItems={menu} />
 
 
             {/* Burgeri i Vrapovi */}
-            <Grid container id='burgeri' spacing={1} sx={{ backgroundColor: '#EBE9E2', py: '50px'}} >
+                
+            <Grid ref={item1} container id='burgeri' spacing={1} sx={{ backgroundColor: '#EBE9E2', py: '50px'}} >
                 <Grid item xs={12} sx={{display: 'flex', alignItems: 'top', justifyContent: 'center', p: 0, m: 0}}>
                     <Typography variant='h2' color='#FF0024' >БУРГЕРИ И ВРАПОВИ</Typography>
                 </Grid>
@@ -202,7 +231,7 @@ const Menu = () => {
             </Grid>
 
             {/* Kofi */}
-            <Grid container id='kofi' spacing={1} sx={{ backgroundColor: '#E3E0D6', py: '50px'}} >
+            <Grid ref={item2} container id='kofi' spacing={1} sx={{ backgroundColor: '#E3E0D6', py: '50px'}} >
                 <Grid item xs={12} sx={{display: 'flex', alignItems: 'top', justifyContent: 'center', p: 0, m: 0}}>
                     <Typography variant='h2' color='#FF0024'>КОФИ</Typography>
                 </Grid>
@@ -212,7 +241,7 @@ const Menu = () => {
             </Grid>
 
             {/* Zakuski */}
-            <Grid container id='zakuski' spacing={1} sx={{ backgroundColor: '#EBE9E2', py: '50px'}} >
+            <Grid ref={item3} container id='zakuski' spacing={1} sx={{ backgroundColor: '#EBE9E2', py: '50px'}} >
                 <Grid item xs={12} sx={{display: 'flex', alignItems: 'top', justifyContent: 'center', p: 0, m: 0}}>
                     <Typography variant='h2' color='#FF0024'>ЗАКУСКИ</Typography>
                 </Grid>
@@ -222,7 +251,7 @@ const Menu = () => {
             </Grid>
 
             {/* Salati */}
-            <Grid container id='salati' spacing={1} sx={{ backgroundColor: '#E3E0D6', py: '50px'}} >
+            <Grid ref={item4} container id='salati' spacing={1} sx={{ backgroundColor: '#E3E0D6', py: '50px'}} >
                 <Grid item xs={12} sx={{display: 'flex', alignItems: 'top', justifyContent: 'center', p: 0, m: 0}}>
                     <Typography variant='h2' color='#FF0024'>САЛАТИ</Typography>
                 </Grid>
@@ -232,7 +261,7 @@ const Menu = () => {
             </Grid>
 
             {/* Obroci za deca */}
-            <Grid container id='deca' spacing={1} sx={{ backgroundColor: '#EBE9E2', py: '50px'}} >
+            <Grid ref={item5} container id='deca' spacing={1} sx={{ backgroundColor: '#EBE9E2', py: '50px'}} >
                 <Grid item xs={12} sx={{display: 'flex', alignItems: 'top', justifyContent: 'center', p: 0, m: 0}}>
                     <Typography variant='h2' color='#FF0024'>ОБРОЦИ ЗА ДЕЦА</Typography>
                 </Grid>
@@ -242,7 +271,7 @@ const Menu = () => {
             </Grid>
 
             {/* Prilozi */}
-            <Grid container id='prilozi' spacing={1} sx={{ backgroundColor: '#E3E0D6', py: '50px'}} >
+            <Grid ref={item6} container id='prilozi' spacing={1} sx={{ backgroundColor: '#E3E0D6', py: '50px'}} >
                 <Grid item xs={12} sx={{display: 'flex', alignItems: 'top', justifyContent: 'center', p: 0, m: 0}}>
                     <Typography variant='h2' color='#FF0024'>ПРИЛОЗИ</Typography>
                 </Grid>

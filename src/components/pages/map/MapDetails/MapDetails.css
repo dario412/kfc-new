@@ -1,0 +1,11 @@
+.map-details {
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    width: 500px;
+    height: 600px;
+    max-height: 600px;
+    overflow: auto;
+    background-color: rgb(228, 228, 228);
+    z-index: 10;
+}

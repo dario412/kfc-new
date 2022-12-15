@@ -1,8 +1,9 @@
 import React from 'react'
+import './SideMenuItem.css'
 
-const SideMenuItem = ({isActive, image}) => {
+const SideMenuItem = ({isActive, name, image}) => {
   return (
-    <div className={isActive ? 'show side-menu-item' : 'side-menu-item'}>
+    <div className={isActive==name ? 'show side-menu-item' : 'side-menu-item'}>
         <img src={image} />
     </div>
   )
