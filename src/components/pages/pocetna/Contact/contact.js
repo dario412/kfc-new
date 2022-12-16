@@ -37,8 +37,11 @@ const Contact = () => {
           <ThreeLinesWhite />
         </Grid>
         <Grid item xs={12} sx={{ textAlign: "center", p: 0 }}>
-          <Typography variant="h2" sx={{ color: "white" }}>
-            БИДИ НАЈДОБАР, НАПРАВИ РАЗЛИКА, ЗАБАВУВАЈ СЕ!
+          <Typography
+            variant="h2"
+            sx={{ color: "white", textTransform: "uppercase" }}
+          >
+            Имаш прашање? пополни ја дадената форма!
           </Typography>
         </Grid>
         <Grid item xs={6} sx={{ textAlign: "end", p: 0 }}>
@@ -76,12 +79,20 @@ const Contact = () => {
             inputProps={{ style: { color: "white" } }}
           />
         </Grid>
-        <Grid item xs={12} sx={{ textAlign: "center", pt: 0 }}>
+        <Grid
+          item
+          xs={12}
+          sx={{
+            textAlign: "center",
+            pt: 0,
+            "& .MuiTextField-root": { width: "51rem" },
+          }}
+        >
           <TextField
             label="ПОРАКА"
             type="text"
             variant="outlined"
-            sx={{ borderColor: "white", width: "580px", maxWidth: "800px" }}
+            sx={{ borderColor: "white", width: "880px", maxWidth: "900rem" }}
             inputProps={{ style: { color: "white" } }}
           />
         </Grid>
@@ -90,7 +101,7 @@ const Contact = () => {
             variant="contained"
             sx={{
               backgroundColor: "white",
-              p: "20px 40px",
+              p: "15px 40px",
               mt: 1,
               fontSize: "16px",
               boxShadow: "none",
