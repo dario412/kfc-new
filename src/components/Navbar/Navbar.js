@@ -22,7 +22,7 @@ const Navbar = () => {
         justifyContent: "center",
         position: "sticky",
         top: 0,
-        zIndex: 100,
+        zIndex: 99999,
       }}
     >
       <Grid container spacing={2} sx={{ width: "1300px" }}>

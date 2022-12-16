@@ -14,6 +14,7 @@ import Kariera from "./components/pages/kariera/Kariera";
 import Map from "./components/pages/map/Map";
 
 function App() {
+
   return (
     <ThemeProvider theme={theme}>
       <Router>
@@ -24,7 +25,7 @@ function App() {
           <Route path="/kontakt" element={<Contact />} />
           <Route path="/kariera" element={<Kariera />} />
           <Route path="/single" element={<SingleProduct />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/novosti" element={<Blog />} />
           <Route path="/map" element={<Map/>} />
         </Routes>
       </Router>

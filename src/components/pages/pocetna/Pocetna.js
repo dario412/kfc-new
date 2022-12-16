@@ -22,6 +22,8 @@ import Blog from "./Blog/BlogCard";
 
   
 const Pocetna = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+
     return (
         <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', pt: '40px', pb: '80px', flexDirection: 'column' }}>
             <Grid container spacing={1} sx={{ width: '1300px'}} >

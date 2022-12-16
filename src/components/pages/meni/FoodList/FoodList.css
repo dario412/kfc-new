@@ -1,5 +1,5 @@
 .food_list {
     display: flex;
     justify-content: center;
-    
+    z-index: 99999;
 }
