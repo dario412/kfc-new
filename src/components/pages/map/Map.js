@@ -3,15 +3,16 @@ import SimpleReactMap from '../../simple-react-map/SimpleReactMap'
 import MapDetails from './MapDetails/MapDetails'
 
 const mapDetailsList = [
-    'a',
-    'b',
-    'c',
-    'a',
-    'b',
-    'c',
-    'a',
-    'b',
-    'c',
+  
+     'East Gate Mall',
+     'Lovkjenska 9',
+    // number: '077829187'
+
+  // {
+  //   title: 'East Gate Mall',
+  //   address: 'Lovkjenska 9',
+  //   number: '077829187'
+  // }
 ]
 
 const Map = () => {

@@ -5,8 +5,8 @@ import './MapDetails.css'
 const MapDetails = ({ mapDetailsList }) => {
   return (
     <div className="map-details">
-      {mapDetailsList.map((x, index) => {
-        return <MapDetailItem key={index} x={x}></MapDetailItem>;
+      {mapDetailsList.map((title, address, index) => {
+        return <MapDetailItem key={index} title={title} address={address}></MapDetailItem>;
       })}
     </div>
   );

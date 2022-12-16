@@ -4,7 +4,7 @@ import SideMenuItem from '../SideMenuItem/SideMenuItem'
 
 const SideMenu = ({sideMenuItems, currentId}) => {
   return (
-    <div style={{width: '100%', position: 'sticky', top: 150, left: 20}}>{sideMenuItems.map((item, index) => {
+    <div style={{width: '100%', position: 'sticky', top: 150, left: 20, }}>{sideMenuItems.map((item, index) => {
         return <SideMenuItem image={item.image} name={item.name} isActive={currentId} key={index} />
     }) }</div>
   )

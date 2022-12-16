@@ -1,10 +1,15 @@
 .show {
-    transform: translateX(110px);
+    transform: translateX(125px);
 }
 
 .side-menu-item {
-    margin-left: -150px;
     position: sticky;
     transition: 0.3s;
     width: 200px;
+    margin: -20px 0 -20px -160px;
+}
+
+.side-menu-item:hover {
+    transform: translateX(125px);
+    cursor: pointer;
 }

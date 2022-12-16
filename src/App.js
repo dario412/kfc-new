@@ -13,7 +13,6 @@ import Contact from "./components/pages/pocetna/Contact/contact";
 import Kariera from "./components/pages/kariera/Kariera";
 import Map from "./components/pages/map/Map";
 
-
 function App() {
   return (
     <ThemeProvider theme={theme}>

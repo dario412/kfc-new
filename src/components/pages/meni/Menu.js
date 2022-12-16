@@ -221,7 +221,7 @@ const Menu = () => {
 
             {/* Burgeri i Vrapovi */}
                 
-            <Grid ref={item1} container id='burgeri' spacing={1} sx={{ backgroundColor: '#EBE9E2', py: '50px'}} >
+            <Grid ref={item1} container id='burgeri' spacing={1} sx={{ backgroundColor: '#EBE9E2', py: '50px', mt: '-460px'}} >
                 <Grid item xs={12} sx={{display: 'flex', alignItems: 'top', justifyContent: 'center', p: 0, m: 0}}>
                     <Typography variant='h2' color='#FF0024' >БУРГЕРИ И ВРАПОВИ</Typography>
                 </Grid>

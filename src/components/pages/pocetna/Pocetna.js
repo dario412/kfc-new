@@ -7,7 +7,7 @@ import Divider from '@mui/material/Divider';
 import styles from './Pocetna.css'
 
 import Ponuda from "./ponuda/Ponuda";
-import { ReactComponent as HeroBanner } from '../../../assets/hero_home.svg';
+import HeroBanner from '../../../assets/hero_home.png';
 import HomeBanner  from '../../../assets/banner_home.png';
 import  Slika1  from '../../../assets/burger_box.svg';
 import  Slika4 from '../../../assets/crispy_box.svg';
@@ -26,7 +26,9 @@ const Pocetna = () => {
         <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', pt: '40px', pb: '80px', flexDirection: 'column' }}>
             <Grid container spacing={1} sx={{ width: '1300px'}} >
                 <Grid item xs={12}>
-                    <HeroBanner />
+                    {/* <HeroBanner /> */}
+                    <img style={{width: "1300px"}} src={HeroBanner} />
+
                 </Grid>
 
                 <Grid item sx={{width: 'fitContent'}}>
