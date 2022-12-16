@@ -12,6 +12,7 @@ import Blog from "./components/pages/Blog/Blog";
 import Contact from "./components/pages/pocetna/Contact/contact";
 import Kariera from "./components/pages/kariera/Kariera";
 import Map from "./components/pages/map/Map";
+import SingleBlog from "./components/pages/single blog/SingleBlog";
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/single" element={<SingleProduct />} />
           <Route path="/novosti" element={<Blog />} />
           <Route path="/map" element={<Map/>} />
+          <Route path="/single-blog" element={<SingleBlog/>} />
         </Routes>
       </Router>
       <Footer />

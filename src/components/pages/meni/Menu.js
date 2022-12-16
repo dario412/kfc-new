@@ -323,33 +323,6 @@ const Menu = () => {
             </Grid>
 
 
-        {/* Prilozi */}
-        <Grid
-          ref={item6}
-          container
-          id="prilozi"
-          spacing={1}
-          sx={{ backgroundColor: "#E3E0D6", py: "50px" }}
-        >
-          <Grid
-            item
-            xs={12}
-            sx={{
-              display: "flex",
-              alignItems: "top",
-              justifyContent: "center",
-              p: 0,
-              m: 0,
-            }}
-          >
-            <Typography variant="h2" color="#FF0024">
-              ПРИЛОЗИ
-            </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <FoodList foodList={prilozi} />
-          </Grid>
-        </Grid>
       </Box>
     </div>
   );

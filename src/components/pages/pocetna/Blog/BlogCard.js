@@ -29,6 +29,7 @@ const BlogCard = (props) => {
               color: "red",
             },
           }}
+          href="/single-blog"
         >
           Види повеќе
         </Button>
