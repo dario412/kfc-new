@@ -29,6 +29,9 @@ const VrabotuvanjeForm = () => {
           "& .MuiGrid-item": {
             pt: 0,
           },
+          // "& .css-7xafav-MuiGrid-root": {
+          //   m: 0,
+          // },
         }}
       >
         <Grid item xs={12} sx={{ textAlign: "center", p: 0, m: 0, pt: 0 }}>
@@ -130,9 +133,9 @@ const VrabotuvanjeForm = () => {
             variant="contained"
             sx={{
               backgroundColor: "white",
-              p: "20px 40px",
+              p: "15px 40px",
               mt: "30px",
-              fontSize: "16px",
+              fontSize: "18px",
               boxShadow: "none",
               borderRadius: 100,
               color: "#D10A1F",

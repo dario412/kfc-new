@@ -24,6 +24,7 @@ const Kariera = () => {
         pt: "80px",
         pb: "80px",
         "& .MuiTextField-root": { borderColor: "white" },
+        "&  .css-7xafav-MuiGrid-root": { m: 0 },
       }}
     >
       <Box sx={{ width: "1300px" }}>
@@ -42,7 +43,14 @@ const Kariera = () => {
           <Grid item xs={12} sx={{ textAlign: "center", p: 0, m: 0, pt: 0 }}>
             <ThreeLinesWhite />
           </Grid>
-          <Grid item xs={12} sx={{ textAlign: "center", p: 0 }}>
+          <Grid
+            item
+            xs={12}
+            sx={{
+              textAlign: "center",
+              p: 0,
+            }}
+          >
             <Typography variant="h2" sx={{ color: "white", pt: "30px" }}>
               БИДИ НАЈДОБАР, НАПРАВИ РАЗЛИКА, ЗАБАВУВАЈ СЕ!
             </Typography>
@@ -54,7 +62,17 @@ const Kariera = () => {
           </Grid>
         </Grid>
         <Grid container sx={{ mt: "60px", mb: "40px" }}>
-          <Grid item xs={6} sx={{ pr: "30px" }}>
+          <Grid
+            item
+            xs={6}
+            sx={{
+              pr: "30px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
             <Typography
               variant="h2"
               sx={{

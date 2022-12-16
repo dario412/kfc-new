@@ -26,8 +26,11 @@ const Navbar = () => {
       }}
     >
       <Grid container spacing={2} sx={{ width: "1300px" }}>
-        <Grid item xs={4}>
-          <Logo />
+        <Grid item xs={4} to={"/"}>
+          <Link href="/">
+            {" "}
+            <Logo />
+          </Link>
         </Grid>
         <Grid
           item
