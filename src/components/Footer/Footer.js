@@ -74,19 +74,19 @@ const Footer = () => {
             >
               НАВИГАЦИЈА
             </Typography>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/" underline="none" color="black" fontWeight={600}>
               ПОЧЕТНА
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/meni" underline="none" color="black" fontWeight={600}>
               МЕНИ
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/kariera" underline="none" color="black" fontWeight={600}>
               КАРИЕРА
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/novosti" underline="none" color="black" fontWeight={600}>
               НОВОСТИ
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/kontakt" underline="none" color="black" fontWeight={600}>
               КОНТАКТ
             </Link>
           </Grid>
@@ -109,19 +109,19 @@ const Footer = () => {
             >
               ЗА НАС
             </Typography>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/novosti" underline="none" color="black" fontWeight={600}>
               НОВОСТИ
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/kariera" underline="none" color="black" fontWeight={600}>
               КАРИЕРА
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/map" underline="none" color="black" fontWeight={600}>
               ЛОКАЦИИ
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/politika-na-privatnost" underline="none" color="black" fontWeight={600}>
               П. НА ПРИВАТНОСТ
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/uslovi-za-koristenje" underline="none" color="black" fontWeight={600}>
               У. ЗА КОРИСТЕЊЕ
             </Link>
           </Grid>
@@ -155,19 +155,19 @@ const Footer = () => {
             >
               ГЛАВНО МЕНИ
             </Typography>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/meni#burgeri" underline="none" color="black" fontWeight={600}>
               БУРГЕРИ И ВРАПОВИ
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/meni#kofi" underline="none" color="black" fontWeight={600}>
               КОФИ
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/meni#zakuski" underline="none" color="black" fontWeight={600}>
               ЗАКУСКИ
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/meni#salati" underline="none" color="black" fontWeight={600}>
               САЛАТИ
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/meni#deca" underline="none" color="black" fontWeight={600}>
               ОБРОЦИ ЗА ДЕЦА
             </Link>
           </Grid>
@@ -191,19 +191,19 @@ const Footer = () => {
             >
               КОНТАКТ
             </Typography>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/map" underline="none" color="black" fontWeight={600}>
               KFC SKOPJE CITY MALL
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/map" underline="none" color="black" fontWeight={600}>
               KFC EAST GATE MALL
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/map" underline="none" color="black" fontWeight={600}>
               KFC DRIVE THRU OKTA
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/map" underline="none" color="black" fontWeight={600}>
               KFC POINT RETAIL PARK
             </Link>
-            <Link href="#" underline="none" color="black" fontWeight={600}>
+            <Link href="/map" underline="none" color="black" fontWeight={600}>
               KFC PALMA MALL
             </Link>
           </Grid>

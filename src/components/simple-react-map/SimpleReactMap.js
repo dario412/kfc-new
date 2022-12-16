@@ -5,7 +5,9 @@ import {
   MarkerF,
   InfoWindow,
 } from "@react-google-maps/api";
-import pin from '../../assets/pin.svg'
+import pin from '../../assets/pin.svg';
+import mapStyles from './mapStyles';
+/*global google*/
 
 const markers = [
   {
@@ -27,6 +29,11 @@ const markers = [
     id: 4,
     name: "New York, New York",
     position: { lat: 42.02508824509921, lng: 21.42919928445958},
+  },
+  {
+    id: 5,
+    name: "New York, New York",
+    position: { lat: 42.00522217216189, lng: 20.989229807929533},
   },
 ];
 
@@ -63,8 +70,9 @@ const SimpleReactMap = () => {
       mapContainerStyle={mapContainerStyle}
       mapContainerClassName="map-container"
       icon={{
-        url: pin
+        url: pin,
       }}
+      options={{disableDefaultUI: true, styles: mapStyles}}
       defaultOptions={{ styles: stylesArr }}
     >
      {markers.map(({ id, name, position }) => (

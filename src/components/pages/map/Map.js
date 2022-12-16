@@ -16,6 +16,8 @@ const mapDetailsList = [
 ]
 
 const Map = () => {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+
   return (
     <div>
         <MapDetails mapDetailsList={mapDetailsList}/>

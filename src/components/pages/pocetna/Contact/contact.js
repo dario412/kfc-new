@@ -7,6 +7,8 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
 const Contact = () => {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+
   return (
     <Box
       sx={{

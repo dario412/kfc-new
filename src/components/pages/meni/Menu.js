@@ -26,13 +26,14 @@ import CreamyCurry from "../../../assets/creamy_curry.svg";
 import Butter from "../../../assets/butter.svg";
 import SweetImperial from "../../../assets/sweet_imperial.svg";
 
-import MenuBurger from "../../../assets/side_burgeri_vrapovi.svg";
-import MenuKofi from "../../../assets/side_kofi.svg";
-import MenuZakuski from "../../../assets/side_zakuski.svg";
-import MenuSalati from "../../../assets/side_salati.svg";
-import MenuDeca from "../../../assets/side_deca.svg";
-import MenuPrilozi from "../../../assets/side_prilozi.svg";
-import SideMenu from "./SideMenu/SideMenu";
+import MenuBurger from '../../../assets/side_burgeri_vrapovi.png';
+import MenuKofi from '../../../assets/side_kofi.png';
+import MenuZakuski from '../../../assets/side_zakuski.png';
+import MenuSalati from '../../../assets/side_salati.png';
+import MenuDeca from '../../../assets/side_deca.png';
+import MenuPrilozi from '../../../assets/side_prilozi.png';
+import SideMenu from './SideMenu/SideMenu';
+
 
 import Akcija1 from "../../../assets/akcija1.svg";
 import Akcija2 from "../../../assets/akcija2.svg";
@@ -260,146 +261,67 @@ const Menu = () => {
 
         <SideMenu currentId={currentId} sideMenuItems={menu} />
 
-        {/* Burgeri i Vrapovi */}
+            {/* Burgeri i Vrapovi */}
+                
+            <Grid ref={item1} container id='burgeri' spacing={1} sx={{ backgroundColor: '#EBE9E2', py: '150px', mt: '-460px'}} >
+                <Grid item xs={12} sx={{display: 'flex', alignItems: 'top', justifyContent: 'center', p: 0, m: 0}}>
+                    <Typography variant='h2' color='#FF0024' >БУРГЕРИ И ВРАПОВИ</Typography>
+                </Grid>
+                <Grid item xs={12} zIndex={9999}>
+                    <FoodList foodList={burgeri} />
+                </Grid>
+            </Grid>
 
-        <Grid
-          ref={item1}
-          container
-          id="burgeri"
-          spacing={1}
-          sx={{ backgroundColor: "#EBE9E2", py: "50px", mt: "-460px" }}
-        >
-          <Grid
-            item
-            xs={12}
-            sx={{
-              display: "flex",
-              alignItems: "top",
-              justifyContent: "center",
-              p: 0,
-              m: 0,
-            }}
-          >
-            <Typography variant="h2" color="#FF0024">
-              БУРГЕРИ И ВРАПОВИ
-            </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <FoodList foodList={burgeri} />
-          </Grid>
-        </Grid>
+            {/* Kofi */}
+            <Grid ref={item2} container id='kofi' spacing={1} sx={{ backgroundColor: '#E3E0D6', py: '150px'}} >
+                <Grid item xs={12} sx={{display: 'flex', alignItems: 'top', justifyContent: 'center', p: 0, m: 0}}>
+                    <Typography variant='h2' color='#FF0024'>КОФИ</Typography>
+                </Grid>
+                <Grid item xs={12} zIndex={9999}>
+                    <FoodList foodList={kofi} />
+                </Grid>
+            </Grid>
 
-        {/* Kofi */}
-        <Grid
-          ref={item2}
-          container
-          id="kofi"
-          spacing={1}
-          sx={{ backgroundColor: "#E3E0D6", py: "50px" }}
-        >
-          <Grid
-            item
-            xs={12}
-            sx={{
-              display: "flex",
-              alignItems: "top",
-              justifyContent: "center",
-              p: 0,
-              m: 0,
-            }}
-          >
-            <Typography variant="h2" color="#FF0024">
-              КОФИ
-            </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <FoodList foodList={kofi} />
-          </Grid>
-        </Grid>
+            {/* Zakuski */}
+            <Grid ref={item3} container id='zakuski' spacing={1} sx={{ backgroundColor: '#EBE9E2', py: '150px'}} >
+                <Grid item xs={12} sx={{display: 'flex', alignItems: 'top', justifyContent: 'center', p: 0, m: 0}}>
+                    <Typography variant='h2' color='#FF0024'>ЗАКУСКИ</Typography>
+                </Grid>
+                <Grid item xs={12} zIndex={9999}>
+                    <FoodList foodList={zakuski} />
+                </Grid>
+            </Grid>
 
-        {/* Zakuski */}
-        <Grid
-          ref={item3}
-          container
-          id="zakuski"
-          spacing={1}
-          sx={{ backgroundColor: "#EBE9E2", py: "50px" }}
-        >
-          <Grid
-            item
-            xs={12}
-            sx={{
-              display: "flex",
-              alignItems: "top",
-              justifyContent: "center",
-              p: 0,
-              m: 0,
-            }}
-          >
-            <Typography variant="h2" color="#FF0024">
-              ЗАКУСКИ
-            </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <FoodList foodList={zakuski} />
-          </Grid>
-        </Grid>
+            {/* Salati */}
+            <Grid ref={item4} container id='salati' spacing={1} sx={{ backgroundColor: '#E3E0D6', py: '150px'}} >
+                <Grid item xs={12} sx={{display: 'flex', alignItems: 'top', justifyContent: 'center', p: 0, m: 0}}>
+                    <Typography variant='h2' color='#FF0024'>САЛАТИ</Typography>
+                </Grid>
+                <Grid item xs={12} zIndex={9999}>
+                    <FoodList foodList={salati} />
+                </Grid>
+            </Grid>
 
-        {/* Salati */}
-        <Grid
-          ref={item4}
-          container
-          id="salati"
-          spacing={1}
-          sx={{ backgroundColor: "#E3E0D6", py: "50px" }}
-        >
-          <Grid
-            item
-            xs={12}
-            sx={{
-              display: "flex",
-              alignItems: "top",
-              justifyContent: "center",
-              p: 0,
-              m: 0,
-            }}
-          >
-            <Typography variant="h2" color="#FF0024">
-              САЛАТИ
-            </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <FoodList foodList={salati} />
-          </Grid>
-        </Grid>
+            {/* Obroci za deca */}
+            <Grid ref={item5} container id='deca' spacing={1} sx={{ backgroundColor: '#EBE9E2', py: '150px'}} >
+                <Grid item xs={12} sx={{display: 'flex', alignItems: 'top', justifyContent: 'center', p: 0, m: 0}}>
+                    <Typography variant='h2' color='#FF0024'>ОБРОЦИ ЗА ДЕЦА</Typography>
+                </Grid>
+                <Grid item xs={12} zIndex={9999}>
+                    <FoodList foodList={deca} />
+                </Grid>
+            </Grid>
 
-        {/* Obroci za deca */}
-        <Grid
-          ref={item5}
-          container
-          id="deca"
-          spacing={1}
-          sx={{ backgroundColor: "#EBE9E2", py: "50px" }}
-        >
-          <Grid
-            item
-            xs={12}
-            sx={{
-              display: "flex",
-              alignItems: "top",
-              justifyContent: "center",
-              p: 0,
-              m: 0,
-            }}
-          >
-            <Typography variant="h2" color="#FF0024">
-              ОБРОЦИ ЗА ДЕЦА
-            </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <FoodList foodList={deca} />
-          </Grid>
-        </Grid>
+            {/* Prilozi */}
+            <Grid ref={item6} container id='prilozi' spacing={1} sx={{ backgroundColor: '#E3E0D6', py: '150px'}} >
+                <Grid item xs={12} sx={{display: 'flex', alignItems: 'top', justifyContent: 'center', p: 0, m: 0}}>
+                    <Typography variant='h2' color='#FF0024'>ПРИЛОЗИ</Typography>
+                </Grid>
+                <Grid item xs={12} zIndex={9999}>
+                    <FoodList foodList={prilozi} />
+                </Grid>
+            </Grid>
+
 
         {/* Prilozi */}
         <Grid

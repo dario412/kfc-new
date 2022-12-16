@@ -13,6 +13,8 @@ import KarieraSlika from "../../../assets/gallery.jpg";
 import SlikaKariera from "../../../assets/image 73.png";
 import VrabotuvanjeForm from "./VrabotuvanjeForm";
 const Kariera = () => {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+
   return (
     <Box
       sx={{

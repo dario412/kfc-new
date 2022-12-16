@@ -19,6 +19,9 @@ import BlogSlika from "../../../assets/blog_test.svg";
 import Blog from "./Blog/BlogCard";
 
 const Pocetna = () => {
+
+    window.scrollTo({top: 0, behavior: 'smooth'});
+
   return (
     <Box
       sx={{

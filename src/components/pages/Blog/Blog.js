@@ -15,6 +15,7 @@ import Familija from '../../../assets/krf_familija.svg';
 
 
 const Blog = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
   return (
     <Grid container sx={{display: 'flex', justifyContent: 'center'}}>
 
@@ -40,8 +41,8 @@ const Blog = () => {
     </Grid>
 
     <Grid container sx={{width: '1300px', py: '40px'}}>
-        <Grid item xs={4}>
-            <BlogCard image={KujnaFico} title='ВО КУЈНА СО ФИЧО' description='Enjoy the crispy chicken fillet in a soft bun with spicy mayo and our signature sauce with fresh lettuce.' />
+    <Grid item xs={4}>
+            <BlogCard image={Familija} title='КFC ЗА ВАШАТА ФАМИЛИЈА!' description='Enjoy the crispy chicken fillet in a soft bun with spicy mayo and our signature sauce with fresh lettuce.' />
         </Grid>
         <Grid item xs={4}>
             <BlogCard image={NovKFC} title='НОВИОТ KFC ВО СКОПЈЕ!' description='Enjoy the crispy chicken fillet in a soft bun with spicy mayo and our signature sauce with fresh lettuce.' />
@@ -59,7 +60,7 @@ const Blog = () => {
             <BlogCard image={Fondacija} title='ФОНДАЦИЈАТА KFC ДОНИРАШЕ' description='Enjoy the crispy chicken fillet in a soft bun with spicy mayo and our signature sauce with fresh lettuce.' />
         </Grid>
         <Grid item xs={4}>
-            <BlogCard image={Familija} title='КFC ЗА ВАШАТА ФАМИЛИЈА!' description='Enjoy the crispy chicken fillet in a soft bun with spicy mayo and our signature sauce with fresh lettuce.' />
+            <BlogCard image={KujnaFico} title='ВО КУЈНА СО ФИЧО' description='Enjoy the crispy chicken fillet in a soft bun with spicy mayo and our signature sauce with fresh lettuce.' />
         </Grid>
     </Grid>
 

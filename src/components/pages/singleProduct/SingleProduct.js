@@ -23,6 +23,8 @@ const slicno = [
 ]
 
 const SingleProduct = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+
   return (
     <Grid container sx={{display: 'felx', justifyContent: 'center'}}>
 
